@@ -1,0 +1,21 @@
+{
+  "name": "@knzk/prettier-config",
+  "version": "1.0.0",
+  "packageManager": "yarn@3.2.1",
+  "main": ".prettierrc.json",
+  "repository": "https://github.com/KnzkDev/prettier-config.git",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "peerDependencies": {
+    "prettier": "2"
+  },
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

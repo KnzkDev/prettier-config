@@ -20,9 +20,8 @@ jobs:
           node-version: ${{ env.node-version }}
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Install deps
-        run: yarn --immutable
+      - run: yarn install --immutable
 
-      - run: yarn publish
+      - run: yarn npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
